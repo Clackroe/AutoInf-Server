@@ -1,4 +1,5 @@
 import { exampleRouter } from "~/server/api/routers/example";
+import { ffmpegRouter } from "~/server/api/routers/ffmpeg";
 import { createTRPCRouter } from "~/server/api/trpc";
 
 /**
@@ -8,6 +9,7 @@ import { createTRPCRouter } from "~/server/api/trpc";
  */
 export const appRouter = createTRPCRouter({
   example: exampleRouter,
+  ffmpeg: ffmpegRouter,
 });
 
 // export type definition of API
